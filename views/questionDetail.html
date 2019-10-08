@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Câu trả lời</title>
+    <style>
+        body{
+            text-align: center;
+            width: 100%;
+        }
+        .vote{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+        }
+        .yes{
+            flex-grow: 1;
+            flex-grow: yescount;
+            background: green;
+            padding: 10px;
+            margin: 2px 0px 2px 20px;
+        }
+        .no{
+            flex-grow: 1;
+            flex-grow: nocount;
+            background: red;
+            padding: 10px;
+            margin: 2px 50px 2px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Content
+    </h1>
+    <b>Câu hỏi: questiontext</b><br>
+    <b>Total vote: totalcount</b>
+    <div class = "vote">
+        <span class="yes">Yes: yescount </span>
+        <span class="no">No: nocount </span>
+    </div>
+</body>
+</html>

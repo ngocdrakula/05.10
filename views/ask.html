@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do you want?</title>
+</head>
+<body>
+    <h1>
+        Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không
+    </h1>
+    <form action="/add-question" method="POST">
+        <textarea name="question" id="addquestion" cols="30" rows="10" maxlength="200"></textarea>
+        <span id = textnumber> Còn 200/200 kí tự</span>
+        <input type="submit">
+    </form>
+    <script>
+        var addquestion = document.getElementById("addquestion");
+        var textnumber = document.getElementById("textnumber");
+        addquestion.addEventListener("input", function(event){
+            textnumber.innerHTML = "Còn "+(200-addquestion.value.length)+"/200 kí tự";
+        });
+        addquestion.pre
+    </script>
+</body>
+</html>
